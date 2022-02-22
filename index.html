@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Video Player</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <video preload="auto" id="video" class="video" src="./Assets/video.mp4"></video>
+    <div class="controls">
+      <div class="bar" id="bar"></div>
+      <input type="range" name="progress" id="progressBar" min="0" max="1000">
+      <div class="mainControls">
+        <img id="playPause" src="./Assets/icons/play.png">
+        <img id="minus10" src="./Assets/icons/-10.png">
+        <img id="plus10" src="./Assets/icons/+10.png">
+      </div>
+      <div class="time">
+        <p id="currentTime"></p>
+        <p>/</p>
+        <p id="totalTime"></p>
+      </div>
+      <div class="audio">
+        <img id="mute" src="./Assets/icons/volumeUp.png">
+        <input type="range" min="0" max="100" class="slider" id="volumeRocker">
+        <img id="fullScreen" src="./Assets/icons/fullScreen.png">
+      </div>
+      
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
